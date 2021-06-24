@@ -1,5 +1,5 @@
 Feature: Add Place To The Google maps using data driven approach
-
+  @FAST
   Scenario Outline: Add place using api
     Given user init the request successfully data driven
     When user created place body successfully with data driven "<name>" "<language>" "<address>"
@@ -14,5 +14,12 @@ Feature: Add Place To The Google maps using data driven approach
     |name       | language          |address|
     |Abdelaziz  | English-In        | Cairo |
     |Zaki       | Arabic-In         | Alexandria |
+
+    @DUMMY
+  Scenario: Dummy Test for a purpose
+    Given user init the request sucessfully
+    When user created place body successfully
+    Then "status" status will be "OK"
+
 
 

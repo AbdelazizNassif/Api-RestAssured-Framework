@@ -123,9 +123,9 @@ public class MyStepdefsDtDr extends Utils{
     public void userTriesToDeleteWithPathTheNewlyCreatedPlacesForTheEndToEndScenario(String api_method, String resource) {
         System.out.println("When II");
         // Delete
-        String deleteReqBody = "{\n" +
-                "    \"place_id\": \""+place_id+"\"\n" +
-                "    }";
+//        String deleteReqBody = "{\n" +
+//                "    \"place_id\": \""+place_id+"\"\n" +
+//                "    }";
         ApiBasePathesAndEndPointsEnumClass api_basePath = ApiBasePathesAndEndPointsEnumClass.valueOf(resource);
         RequestSpecification getRequestSpecification = constructRequestSpecs("application/json");
         if(api_method.equalsIgnoreCase("delete")) {
