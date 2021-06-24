@@ -9,6 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.json.simple.JSONObject;
 import org.junit.Assert;
 
 import java.util.ArrayList;
@@ -60,5 +61,10 @@ public class TestDataBuilding {
         requestBody.setLanguage(language);
         return requestBody;
     }
+    public static JSONObject createDeletePlcaeBody(String place_id) {
+        JSONObject createBookingBody = new JSONObject();
+        createBookingBody.put("place_id", place_id);
 
+        return createBookingBody;
+    }
 }
