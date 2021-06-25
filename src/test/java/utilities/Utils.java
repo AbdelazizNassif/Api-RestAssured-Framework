@@ -44,7 +44,7 @@ public class Utils {
     public static String getGlobalProperty(String propKey) {
         String valueOfProperty = null;
         try {
-            String propFilePath = "Change this to your dirctory + "/src/test/java/utilities/globalProperties.properties";
+            String propFilePath = "C:/Users/SamirA7/OneDrive - Vodafone Group/Documents/Bdd_Framewrk_For_Api/src/test/java/utilities/globalProperties.properties";
             Properties prop = new Properties();
             FileInputStream fis = new FileInputStream(propFilePath);
             prop.load(fis);
